@@ -1,6 +1,5 @@
 const PouchDB = require('pouchdb');
 
-// const connectionString = `https://${process.env.DB_USER}:${process.env.DB_PW}@${process.env.DB_HOST}`;
 const connectionString = 'http://localhost:5984/assets';
 const db = new PouchDB(connectionString);
 

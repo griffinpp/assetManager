@@ -12,8 +12,8 @@ app.use(bodyParser.json({ limit: '50mb' }));
 // load up the v1 router
 app.use('/v1', v1router);
 
-// set the port that we want the application to run on, default to port 3000
-const port = process.env.PORT || 3000;
+// set the port that we want the application to run on
+const port = 3000;
 
 // start the server
 app.listen(port, () => {

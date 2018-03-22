@@ -7,6 +7,7 @@ const {
 // get the adapter - this one saves data in memory
 const adapter = require('../data/adapters/memory.adapter');
 
+// after configuring the connection string in the couch.adapter,
 // comment out the above adapter and uncomment the below adapter to connect to a couchDB instance
 // const adapter = require('../data/adapters/couch.adapter');
 

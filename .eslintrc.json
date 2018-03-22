@@ -1,0 +1,14 @@
+{
+    "extends": "airbnb-base",
+    "globals": {
+      "beforeEach": true,
+      "describe": true,
+      "expect": true,
+      "it": true,
+      "sinon": true
+    },
+    "rules": {
+      "arrow-body-style": ["error", "always"],
+      "no-console": "off"
+    }
+}

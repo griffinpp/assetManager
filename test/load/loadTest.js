@@ -1,6 +1,6 @@
 const loadtest = require('loadtest');
 
-const rps = 1000;
+const rps = 500;
 const cc = 200;
 
 // POST, PUT, and DEL asset all are all tied for most expensive operation,
@@ -23,7 +23,7 @@ const postOptions = {
     options.body = message;
     // randomize the asset uid we're POST-ing
     // eslint-disable-next-line
-    options.path = `/v1/assets?uri=myorg://users/${Math.floor(Math.random() * 100000000)}`;
+    options.path = `/v1/assets?uri=myorg://users/${Math.floor(Math.random() * 100000000000)}`;
     const request = client(options, callback);
     request.write(message);
     return request;

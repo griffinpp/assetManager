@@ -12,7 +12,7 @@ const adapter = require('../data/adapters/memory.adapter');
 // const adapter = require('../data/adapters/couch.adapter');
 
 // load the adapter into the service. Now calls to the data service will use the adapter.
-const service = require('../data/data.service')(adapter);
+const service = require('../data/assets.data.service')(adapter);
 
 /*
 In general, I consider controller functions to be the point of behavior assembly. Basic
